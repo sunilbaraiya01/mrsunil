@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+    padding: 8px 20px;
+    width: 200px;
+    height: 50px;
+
+    color: #050505;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 25px;
+    overflow: hidden;
+    border-radius: 9px;
+    position: relative;
+}
+
+.btn::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent);
+    transform: translateX(-100%);
+    transition: 0.6s;
+    position: absolute;
+}
+
+.btn:hover {
+    background: transparent;
+    box-shadow: 0 0 20px 5px red;
+    color: aliceblue;
+}
+.btn1 {
+    padding: 8px 20px;
+    width: 200px;
+    height: 50px;
+
+    color: #050505;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 25px;
+    overflow: hidden;
+    border-radius: 9px;
+    position: relative;
+}
+
+.btn1::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent);
+    transform: translateX(-100%);
+    transition: 0.6s;
+    position: absolute;
+}
+
+.btn1:hover {
+    background: transparent;
+    box-shadow: 0 0 20px 5px green;
+    color: aliceblue;
+}.btn2 {
+    padding: 8px 20px;
+    width: 200px;
+    height: 50px;
+
+    color: #050505;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 25px;
+    overflow: hidden;
+    border-radius: 9px;
+    position: relative;
+}
+
+.btn2::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent);
+    transform: translateX(-100%);
+    transition: 0.6s;
+    position: absolute;
+}
+
+.btn2:hover {
+    background: transparent;
+    box-shadow: 0 0 20px 5px blue;
+    color: aliceblue;
+}
+h1{
+    color: white;
+}
+h1:hover{
+    color: gold;
+}
+    </style>
+</head>
+<body>
+    <h1>This is RGB Color Buttons...</h1>
+    <input type="submit" value="RED COLOR" class="btn">
+    <input type="submit" value="GREEN COLOR" class="btn1">
+    <input type="submit" value="BLUE COLOR" class="btn2">
+</body>
+</html>
